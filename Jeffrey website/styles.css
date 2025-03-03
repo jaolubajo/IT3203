@@ -1,0 +1,145 @@
+/* General styles for the page */
+* {
+    margin: 0; /* Remove default margin from all elements */
+    padding: 0; /* Remove default padding from all elements */
+    box-sizing: border-box; /* Makes sure padding and border are included in the width/height of the elements */
+}
+
+/* The body of the page */
+body {
+    font-family: Arial, sans-serif; /* Use a simple, easy-to-read font */
+    background-color: #f0f0f0; /* Set a light grey background for the entire page */
+    color: #333; /* Dark grey text color for better readability */
+    padding: 20px; /* Adds space around the content inside the body */
+    display: flex; /* Use flexbox to align the content easily */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Set the body's height to cover the entire viewport */
+    background-image: 
+      url('https://www.transparenttextures.com/patterns/stardust.png'); /* Add a light star pattern to the background */
+    background-size: cover; /* Make the background pattern fill the entire page */
+}
+
+/* Container for the whole website's content */
+.container {
+    width: 80%; /* Make the container 80% of the page's width */
+    max-width: 1200px; /* Limit the width of the container to 1200px for larger screens */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center the text inside the container */
+    background-color: white; /* Give the container a white background */
+    border-radius: 8px; /* Add rounded corners to the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Apply a light shadow around the container for a soft effect */
+}
+
+/* The header section style */
+header {
+    background-color: #333; /* Dark grey background for the header */
+    color: white; /* White text color for the header */
+    padding: 20px; /* Add padding inside the header */
+    text-align: center; /* Center the text inside the header */
+    border-bottom: 2px solid #f3f1f1; /* Add a light grey line at the bottom of the header */
+}
+
+/* Navigation menu inside the header */
+header nav {
+    margin-top: 10px; /* Adds space between the title and the navigation menu */
+}
+
+header nav ul {
+    list-style: none; /* Remove the default bullet points from the list */
+    display: flex; /* Use flexbox to align the navigation items horizontally */
+    justify-content: center; /* Center the navigation items horizontally */
+}
+
+header nav ul li {
+    margin: 0 20px; /* Add space between each list item (menu item) */
+}
+
+/* Styling for the links in the navigation menu */
+header nav ul li a {
+    color: white; /* Make the links white so they stand out on the dark header */
+    text-decoration: none; /* Remove the underline from links */
+    font-weight: bold; /* Make the links bold for emphasis */
+    font-size: 18px; /* Set the font size for the links */
+}
+
+/* Hover effect for the links in the navigation menu */
+header nav ul li a:hover {
+    text-decoration: underline; /* Underline the link when hovered */
+    color: #ccc; /* Change the link color to a lighter grey when hovered */
+}
+
+/* Main content area of the website */
+main {
+    padding: 20px; /* Adds padding inside the main content area */
+    display: flex; /* Use flexbox to align content in the center */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 80vh; /* Take up 80% of the height of the viewport */
+}
+
+/* Section styles inside the main content */
+section {
+    text-align: center; /* Center the text inside each section */
+    margin: 20px 0; /* Add space between the sections */
+    background-color: #f9f9f9; /* Light grey background for each section */
+    padding: 20px; /* Add padding inside each section */
+    border-radius: 8px; /* Round the corners of the sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a light shadow around each section for depth */
+    border: 1px solid #ddd; /* Add a light border to separate the sections */
+}
+
+/* Section headings (h2) style */
+section h2 {
+    font-size: 24px; /* Increase the font size for section headings */
+    color: #333; /* Dark grey color for headings */
+    margin-bottom: 10px; /* Add some space below the heading */
+}
+
+/* Footer (not visible in this version) */
+footer {
+    display: none; /* Hide the footer (it’s not used in this version) */
+}
+
+/* General link styles */
+a {
+    color: #333; /* Dark grey color for links */
+}
+
+a:hover {
+    color: #666; /* Lighter grey color when hovering over links */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Make the table take up the full width */
+    margin-top: 20px; /* Add space above the table */
+    border-collapse: collapse; /* Remove space between table cells */
+    color: #333; /* Dark grey color for table text */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Light grey border around the table and cells */
+}
+
+th, td {
+    padding: 10px; /* Add padding inside the table cells */
+    text-align: left; /* Align text to the left in cells */
+}
+
+table th {
+    background-color: #f1f1f1; /* Light grey background for table headers */
+}
+
+/* Responsive Design: Adjust layout for smaller screens (less than 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Make the container take up the full width on smaller screens */
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    header nav ul li {
+        display: block; /* Stack the menu items vertically */
+        margin-bottom: 10px; /* Add space between menu items */
+    }
+}
