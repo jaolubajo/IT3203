@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Knowdledge Check</title> 
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Quiz</h1> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="topic1.html">Cookies</a></li> 
+                    <li><a href="topic2.html">History of HTML</a></li> 
+                    <li><a href="resources.html">References</a></li> 
+                </ul>
+            </nav>
+        </header>
+        <main> 
+            <form id="quizForm"> <!-- Quiz form with the ID used for Java -->
+                <div class="question">
+                    <p>1. Cookies are small pieces of _____.</p>
+                    <input type="text" name="q1" placeholder="Answer:"> <!-- Answer is data -->
+                </div> 
+                <div class="question">
+                    <p>2. What does HTML stand for?</p>
+                    <label><input type="radio" name="q2" value="a"> HyperTool Markup Language</label><br> 
+                    <label><input type="radio" name="q2" value="b"> HyperText Markup Language</label><br> <!-- correct -->
+                    <label><input type="radio" name="q2" value="c"> HyperText Makeup Language</label><br>
+                </div> 
+                <div class="question">
+                    <p>3. Which is not a type of cookie?</p>
+                    <label><input type="radio" name="q3" value="a"> Sub cookies</label><br> <!-- correct -->
+                    <label><input type="radio" name="q3" value="b"> Zombie cookies</label><br>
+                    <label><input type="radio" name="q3" value="c"> Secure cookies</label><br>
+                </div> 
+                <div class="question">
+                    <p>4. Which of the following are versions of HTML? *Select all that apply*</p>
+                    <label><input type="checkbox" name="q4" value="a"> HTML 1.0 </label><br>
+                    <label><input type="checkbox" name="q4" value="b"> HTML 3.2 </label><br> 
+                    <label><input type="checkbox" name="q4" value="c"> HTML 5.0 </label><br>
+                    <label><input type="checkbox" name="q4" value="d"> HTML 7.0 </label> <!-- X -->
+                </div>
+                <div class="question">
+                    <p>5. What is a main function of cookies?</p>
+                    <label><input type="radio" name="q5" value="a"> Track user behaviors</label><br> <!-- correct -->
+                    <label><input type="radio" name="q5" value="b"> Search through a website quicker</label><br>
+                    <label><input type="radio" name="q5" value="c"> Block ads from a website</label><br>
+                </div> 
+                <button type="submit">Submit</button> </form>
+                <div id="result"></div> <!-- shows results -->
+        </main>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
